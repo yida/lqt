@@ -413,6 +413,9 @@ bool lqtL_isinteger (lua_State *L, int i) {
 		return false;
 	}
 }
+bool lqtL_iscdata(lua_State *L, int i) {
+    return lua_type(L, i)==10;
+}
 bool lqtL_isnumber (lua_State *L, int i) {
     return lua_type(L, i)==LUA_TNUMBER;
 }
