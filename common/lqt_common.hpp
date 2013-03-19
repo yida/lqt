@@ -107,6 +107,7 @@ bool lqtL_isstring (lua_State *, int);
 bool lqtL_isboolean (lua_State *, int);
 
 bool lqtL_iscdata (lua_State *, int);
+bool lqtL_islightuserdata (lua_State *, int);
 
 bool lqtL_missarg (lua_State *, int, int);
 //int lqtL_baseindex (lua_State *, int, int);

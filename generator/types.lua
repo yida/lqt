@@ -90,9 +90,9 @@ base_types['unsigned char const*'] = {
 		return 'lua_pushlightuserdata(L, const_cast<unsigned char *>('..tostring(j)..'))', 1
 	end,
 	test = function(j)
-		return 'lqtL_iscdata(L, '..tostring(j)..')', 1
+		return 'lqtL_islightuserdata(L, '..tostring(j)..')', 1
 	end,
-	onstack = 'cdata,',
+	onstack = 'lightuserdata,',
 }
 
 base_types['char'] = integer_type(3)
